@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+<bean class ="org.GLSpringcore.Employee" name ="Employeeone">
+
+             <property name="name">
+                      <value> Mayur Jiwtdoe </value>
+             </property> 
+             
+			 <property name ="phones">
+					 <list>
+					 <value>635536353</value>
+					 <value>638363753</value>
+					 <value>337336353</value>
+					 </list>
+			 </property>
+			 <property name="address">
+						<set>
+						    <value> Delhi </value>
+							<value> Mumbai </value>
+							<value> Chandrapur </value>
+						</set>
+			</property>
+	
+			 <property name="courses">
+						<map>  
+						<entry key ="Java" value ="two months"></entry> 
+						<entry key ="Python" value ="Three months"></entry>
+						<entry key ="C" value =" 4 months"></entry>
+						</map>
+			 </property>
+ </bean>
+ 
+ </beans>
